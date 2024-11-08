@@ -113,6 +113,11 @@
 
     <!-- Main content -->
     <div id="content-container" class="w3-main" style="margin-left: 250px">
+      <div id="content" class="w3-container w3-padding-64 hidden container">
+        <div id="header-layout" class="header-layout"></div>
+        <div id="grid-content" class="grid-container"></div>
+      </div>
+
       <!-- Section 1: Logo -->
       <div id="Trang chủ" class="w3-container w3-padding-64 hidden">
         <div class="container">
@@ -993,8 +998,7 @@
             <table id="table-admin-contents-layout" class="admin-table"></table>
           </div>
         </div>
-        <div class="edit hidden">
-        </div>
+        <div class="edit hidden"></div>
       </div>
 
       <!-- Section 8: Admin contents -->
@@ -1030,9 +1034,12 @@
             document
               .getElementById("admin-page-button")
               .addEventListener("click", () => {
-                document.querySelector("#admin-contents > div.ql-toolbar.ql-snow").remove();
+                document
+                  .querySelector("#admin-contents > div.ql-toolbar.ql-snow")
+                  .remove();
                 document.getElementById("editText").classList = "hidden";
-                document.getElementById('editor').classList = 'ql-container ql-snow'
+                document.getElementById("editor").classList =
+                  "ql-container ql-snow";
               });
           });
         </script>

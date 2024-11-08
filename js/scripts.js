@@ -6,28 +6,31 @@ const section = [
         menuLeft: "Thông tin khai giảng",
         contentsLayout: [
           {
-            content: "Seminar hôm nay",
+            content: "Thông tin khai giảng",
             startRow: 1,
-            endRow: 2,
-            startCol: 9,
-            endCol: 10,
-            contentInside: "",
-          },
-          {
-            content: "Nội dung seminar hôm nay",
-            startRow: 3,
-            endRow: 4,
-            startCol: 9,
-            endCol: 10,
-            contentInside: "",
-          },
-          {
-            content: "Ảnh seminar hôm nay",
-            startRow: 4,
-            endRow: 5,
-            startCol: 3,
-            endCol: 4,
-            contentInside: "",
+            endRow: 20,
+            startCol: 1,
+            endCol: 16,
+            contentInside: `<div class="section-header">Thông tin khai giảng</div>
+            <table class="table-info">
+              <tr>
+                <th>Thứ</th>
+                <td>Thứ 6</td>
+              </tr>
+              <tr>
+                <th>Thời gian/Tiết</th>
+                <td>Từ 3 đến 6</td>
+              </tr>
+              <tr>
+                <th>Ngày/Tuần</th>
+                <td>2-9,11-18</td>
+              </tr>
+              <tr>
+                <th>Tại địa điểm</th>
+                <td>D9-501</td>
+              </tr>
+            </table>
+          </div>`,
           },
         ],
       },
@@ -35,28 +38,46 @@ const section = [
         menuLeft: "Thông tin seminar",
         contentsLayout: [
           {
-            content: "Seminar hôm nay",
+            content: "Thông tin seminar",
             startRow: 1,
-            endRow: 2,
+            endRow: 20,
             startCol: 1,
-            endCol: 10,
-            contentInside: "",
-          },
-          {
-            content: "Nội dung seminar hôm nay",
-            startRow: 2,
-            endRow: 5,
-            startCol: 1,
-            endCol: 10,
-            contentInside: "",
-          },
-          {
-            content: "Ảnh seminar hôm nay",
-            startRow: 1,
-            endRow: 5,
-            startCol: 10,
             endCol: 16,
-            contentInside: "",
+            contentInside: `<div id="seminar">
+            <div class="section-header" style="margin-top: 20px">
+              Thông tin seminar
+            </div>
+            <table class="table-info">
+              <tr>
+                <th>Mã lớp</th>
+                <td>151900</td>
+              </tr>
+              <tr>
+                <th>Loại hình</th>
+                <td>LT+BT</td>
+              </tr>
+              <tr>
+                <th>Hệ</th>
+                <td>HEDSPI</td>
+              </tr>
+              <tr>
+                <th>GVHD</th>
+                <td>Phạm Huy Hoàng</td>
+              </tr>
+              <tr>
+                <th>Số lần vắng</th>
+                <td>0</td>
+              </tr>
+              <tr>
+                <th>Số sinh viên</th>
+                <td>150</td>
+              </tr>
+              <tr>
+                <th>Hình thức GD</th>
+                <td>Offline</td>
+              </tr>
+            </table>
+          </div>`,
           },
         ],
       },
@@ -64,28 +85,85 @@ const section = [
         menuLeft: "Thông tin công ty quan tâm",
         contentsLayout: [
           {
-            content: "Tên công ty",
+            content: "Thông tin công ty quan tâm",
             startRow: 1,
-            endRow: 2,
-            startCol: 6,
-            endCol: 7,
-            contentInside: "",
+            endRow: 20,
+            startCol: 1,
+            endCol: 10,
+            contentInside: `<div id="company">
+            <div class="section-header" style="margin-top: 20px">
+              Thông tin công ty quan tâm
+            </div>
+            <div style="display: flex; justify-content: space-between">
+              <!-- Nội dung bên trái -->
+              <div style="flex: 2; margin-right: 30px">
+                <ul>
+                  <li><strong>Công ty:</strong> FPT Software</li>
+                </ul>
+                <p>
+                  FPT Software là tên gọi khác của công ty TNHH Phần Mềm FPT với
+                  nhiệm vụ chính là gia công phần mềm tại Việt Nam và nước
+                  ngoài. Thành lập từ năm 1988 đến nay với 3 Trụ sở chính FPT
+                  Software đặt tại Việt Nam và một số nước trên toàn thế giới
+                  như Hoa Kỳ, Nhật Bản, Malaysia, Đức, Úc, Singapore, Malaysia,
+                  Thái Lan và Philipines hiện FPT Software đáp ứng nhu cầu gia
+                  công phần mềm lớn cho hơn 150 công ty hàng đầu tại 20 quốc gia
+                  lớn nhất trên thế giới hiện nay với các hợp đồng lớn có khi
+                  đạt cả 1 triệu USD dành cho một số đối tác lớn như Hitachi,
+                  NEOPOST, Petronas, Deutsche Bank, và Unilever với hơn 4000
+                  nhân viên trên toàn thế giới.
+                </p>
+
+                <p>
+                  FPT Software theo đuổi mục tiêu gia công phần mềm để đáp ứng
+                  cho nhu cầu phát triển CNTT của các hãng phần mềm trong nước,
+                  các công ty lớn trong nước và tham vọng hơn là xuất khẩu phần
+                  mềm trên toàn thế giới cho các công ty nước ngoài biết đến tập
+                  đoàn FPT, mục đích chính là vươn đến tầm cao mới thông qua
+                  công nghệ nhằm nâng cao năng suất lao động.
+                </p>
+
+                <p>
+                  Kinh doanh của FPT Software xuất phát từ Công nghệ thông tin
+                  và Viễn Thông FPT là cốt lõi để đáp ứng cho khách hàng trên 63
+                  tỉnh thành trên toàn lãnh thổ Việt Nam và mở rộng đến khách
+                  hàng toàn cầu. Từ khi được thành lập cho đến nay, FPT Software
+                  đã là công ty phần mềm số 1 tại Việt Nam trong lĩnh vực tích
+                  hợp hệ thống, phân phối và bán lẻ, dịch vụ Công Nghệ Thông
+                  tin, xuất khẩu gia công phần mềm, bán lẻ sản phẩm CNTT. Ở lĩnh
+                  vực Viễn Thông FPT là một trong 3 nhà cung cấp dịch vụ
+                  internet cáp quang FPT hàng đầu tại Việt Nam. Về lĩnh vực
+                  quảng cáo, FPT là đơn vị quảng cáo trực tuyến số 1 tại Việt
+                  Nam với trang báo điện tử VNexpress với hơn 42 triệu lượt truy
+                  cập mỗi ngày.
+                </p>
+              </div>
+            </div>
+          </div>`,
           },
           {
-            content: "Lĩnh vực",
-            startRow: 2,
-            endRow: 3,
-            startCol: 6,
-            endCol: 7,
-            contentInside: "",
-          },
-          {
-            content: "Thông tin liên hệ",
-            startRow: 3,
-            endRow: 4,
-            startCol: 6,
-            endCol: 7,
-            contentInside: "",
+            content: "Quảng cáo",
+            startRow: 1,
+            endRow: 20,
+            startCol: 10,
+            endCol: 16,
+            contentInside: `<!-- Quảng cáo bên phải -->
+              <a
+                href="https://fptsoftware.com/"
+                target="_blank"
+                style="flex: 1; margin-top: 20px"
+              >
+                <div class="FRB" style="width: 100%">
+                  <img
+                    class="DRB"
+                    src="http://itde.hvnh.edu.vn/public/img/news/files/FPT%20tuy%E1%BB%83n%20d%E1%BB%A5ng%20(2).jpg"
+                    style="width: 100%"
+                  />
+                  <div class="ERB" style="width: 100%; color: blue" title="">
+                    FPT SOFTWARE TUYỂN DỤNG
+                  </div>
+                </div>
+              </a>`,
           },
         ],
       },
@@ -384,7 +462,7 @@ function w3_close() {
   overlayBg.style.display = "none";
 }
 // Function to show content and update button style
-function showContent(menuName) {
+function showContent(menuName, menuLeftIndex = 0) {
   // Hide all sections
   const sections = document.querySelectorAll(".w3-container");
   sections.forEach((section) => section.classList.add("hidden"));
@@ -393,59 +471,53 @@ function showContent(menuName) {
   const buttons = document.querySelectorAll(".w3-bar-item");
   buttons.forEach((button) => button.classList.remove("active"));
 
-  // Show selected section
-  document.getElementById(menuName).classList.remove("hidden");
-
-  const sidebar = document.getElementById("mySidebar");
-  sidebar.innerHTML = "";
-
-  if (menuName === "Trang chủ") {
-    sidebar.innerHTML = `
-    <h4 class="w3-bar-item"><b>Menu</b></h4>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#classInfo">Thông tin khai giảng</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#seminar">Thông tin Seminar</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#company">Thông tin công ty quan tâm</a>
-  `;
-  } else if (menuName === "Thông tin môn học") {
-    sidebar.innerHTML = `
-    <h4 class="w3-bar-item"><b>Thông tin môn học</b></h4>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#summaryVN">Mô tả tóm tắt học phần (tiếng Việt) (*)</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#summaryEN">Mô tả tóm tắt học phần (tiếng Anh) (*)</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#contentVN">Nội dung tóm tắt học phần (tiếng Việt) (*)</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#contentEN">Nội dung tóm tắt học phần (tiếng Anh) (*)</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#reference">Sách tham khảo</a>
-
-  `;
-  } else if (menuName === "web-tech") {
-    sidebar.innerHTML = `
-    <h4 class="w3-bar-item"><b>Công nghệ Web</b></h4>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#frontend">1. Frontend (Giao diện người dùng)</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#backend">2. Backend (Máy chủ và xử lý dữ liệu)</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#database">3. Cơ sở dữ liệu</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#api">4. API và Tích hợp dịch vụ</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#devops">5. DevOps và Triển khai</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#security">6. Bảo mật</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#testing">7. Testing và Debugging</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#optimization">8. Performance Optimization</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#authentication">9. User Authentication & Authorization</a>
-  `;
-  } else if (menuName === "Thông tin sinh viên") {
-    sidebar.innerHTML = `
-    <h4 class="w3-bar-item"><b>Thông tin sinh viên</b></h4>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#academic-info">Thông tin học tập</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#skills-info">Kĩ năng</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#projects-info">Dự án</a>
-    <a class="w3-bar-item w3-button w3-hover-black" href="#hobbies-info">Sở thích</a>
-  `;
-  }
-
-  // Add active class to clicked button
-  event.target.classList.add("active");
-  if (menuName === "admin-page") {
+  if (menuName == "admin-page") {
+    document.getElementById("content").classList.add('hidden')
+    document.getElementById("admin-page").classList.remove("hidden");
     const menuTopItems = section.map((item) => item.menuTop);
     showAdminTable(menuTopItems);
+  } else {
+    // Show selected section
+    // document.getElementById(menuName).classList.remove("hidden");
+    document.getElementById("content").classList.remove("hidden");
+    const headerPreviewLayout = document.getElementById("header-layout");
+
+    const sidebar = document.getElementById("mySidebar");
+    sidebar.innerHTML = "";
+    const menu = section.find((item) => item.menuTop === menuName);
+    const menuLeft = menu.menuLeft.map((item) =>
+      typeof item === "object" ? item.menuLeft : item
+    );
+    sidebar.innerHTML = `<h4 class="w3-bar-item"><b>${menuName}</b></h4>`;
+    menuLeft.forEach((item, index) => {
+      sidebar.innerHTML += `
+        <a onclick = 'showContent("${menuName}", ${index})' class="w3-bar-item w3-button w3-hover-black" href="#${item
+        .replace(/\s+/g, "")
+        .toLowerCase()}" menu-left-name="${item}">
+          ${item}
+        </a>
+      `;
+    });
+
+    const gridContent = document.getElementById("grid-content");
+    gridContent.innerHTML = "";
+    const contentsLayout = menu.menuLeft[menuLeftIndex].contentsLayout;
+    contentsLayout.forEach((item) => {
+      const div = document.createElement("div");
+      div.classList.add("content-box-without-border");
+      div.style.gridRow = `${item.startRow} / ${item.endRow}`;
+      div.style.gridColumn = `${item.startCol} / ${item.endCol}`;
+      div.innerHTML = item.contentInside;
+
+      gridContent.appendChild(div);
+    });
+
+    headerPreviewLayout.textContent = menu.menuLeft[menuLeftIndex].menuLeft;
+    // Add active class to clicked button
+    event.target.classList.add("active");
   }
 }
+
 window.onload = function () {
   showContent("Trang chủ");
 };
@@ -470,6 +542,7 @@ function insertAfter(newNode, referenceNode) {
 }
 
 function showAdminTable(menuItems) {
+  document.getElementById("grid-content").classList.add("hidden");
   const adminPage = document.getElementById("admin-page");
 
   const table = document.createElement("table");
@@ -594,11 +667,10 @@ function editMenuName(menuName) {
 function saveMenuName(input, menuHeadCell, oldMenuName) {
   console.log(menuHeadCell);
   console.log(oldMenuName);
-  
-  
+
   const newName = input.value.trim();
   console.log(newName);
-  
+
   if (newName) {
     menuHeadCell.textContent = newName;
 
@@ -614,8 +686,8 @@ function saveMenuName(input, menuHeadCell, oldMenuName) {
   const index = section.findIndex((item) => item.menuTop === oldMenuName);
   if (index !== -1) {
     section[index].menuTop = newName;
-  }  
-  const menuTopItems = section.map((item) => item.menuTop)
+  }
+  const menuTopItems = section.map((item) => item.menuTop);
   showAdminTable(menuTopItems);
 }
 
@@ -665,7 +737,7 @@ function showAdminMenuLeftContent(rows, menuName) {
 
   const table = document.getElementsByClassName("admin-table")[1];
   table.innerHTML = "";
-
+  
   rows.forEach((row) => {
     const newRow = document.createElement("tr");
     if (row === rows[rows.length - 1]) {
@@ -745,15 +817,17 @@ function editMenuLeftName(menuTop, chosenMenuLeft) {
   const clickedCell = event.target.closest("td");
   const clickedRow = clickedCell.closest("tr");
   const menuHeadCell = clickedRow.querySelector(".admin-head-cell");
-
+  
   if (menuHeadCell) {
     const currentName = menuHeadCell.textContent.trim();
     const input = document.createElement("input");
     input.type = "text";
     input.value = currentName;
     menuHeadCell.innerHTML = "";
-    menuHeadCell.appendChild(input);
+    console.log(section);
 
+    menuHeadCell.appendChild(input);
+    
     input.addEventListener("blur", () =>
       saveMenuLeftName(input, menuTop, chosenMenuLeft)
     );
@@ -769,10 +843,10 @@ function saveMenuLeftName(input, menuTop, chosenMenuLeft) {
   const newName = input.value.trim();
   const menu = section.find((item) => item.menuTop === menuTop);
   const index = menu.menuLeft.findIndex((item) =>
-    typeof item === "object"
-      ? item.menuLeft === chosenMenuLeft
-      : item === chosenMenuLeft
+    item.menuLeft
   );
+  
+ 
   menu.menuLeft[index].menuLeft = newName;
   showAdminMenuLeft(menuTop);
 }
@@ -856,9 +930,9 @@ function showPreviewLayout(menuTop, menuLeft, forLayout) {
   headerPreviewLayout.textContent = menuLeft;
 
   if (forLayout) {
-    document.querySelector('#preview-layout > a').classList = ''
+    document.querySelector("#preview-layout > a").classList = "";
   } else {
-    document.querySelector('#preview-layout > a').classList = 'hidden'
+    document.querySelector("#preview-layout > a").classList = "hidden";
   }
 
   const gridContainer = document.getElementById("grid-container");
@@ -1022,7 +1096,7 @@ function fillEmptyGridCells() {
 }
 
 function showAdminContents(menuTop, menuLeft, chosenContentLayout) {
-  document.getElementById('editText').classList = ''
+  document.getElementById("editText").classList = "";
   document.getElementById("admin-contents-layout").classList.add("hidden");
   document.getElementById("admin-contents").classList.remove("hidden");
   document.getElementById("admin-contents").setAttribute("menuTop", menuTop);
@@ -1059,7 +1133,7 @@ function saveContent(menuTop, menuLeft, chosenContentLayout, innerHTML) {
   const contentLayout = selectedMenuLeft.contentsLayout.find(
     (layout) => layout.content === chosenContentLayout
   );
-  innerHTML = innerHTML.slice(3, -4)
+  innerHTML = innerHTML.slice(3, -4);
   contentLayout.contentInside = innerHTML;
   showPreviewLayout(menuTop, menuLeft, false);
 }

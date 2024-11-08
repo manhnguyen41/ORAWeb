@@ -234,3 +234,19 @@ textarea {
 .img-avatar {
   max-height: 100%;
 }
+
+.content-box-without-border {
+  padding: 5px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.header-layout {
+  font-weight: bold;
+  font-size: medium;
+  color: #fff;
+  background-color: #ffb300;
+  height: 40px;
+  align-content: center;
+  text-align: center;
+}
